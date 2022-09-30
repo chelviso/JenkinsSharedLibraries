@@ -12,4 +12,8 @@ def call(String stageName){
      {
        sh "mvn deploy"
      }
+  else if ("${stageName}" == "Upload Into Tomcat")
+     {
+       deploy adapters: [tomcat9(path: '', url: 'http://18.207.212.227:8080/')], contextPath: null, war: 'target/*war'
+     }
 }
