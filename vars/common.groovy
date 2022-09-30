@@ -10,6 +10,6 @@ def call(String stageName){
      }
   else if ("${stageName}" == "Upload Into Nexus")
      {
-       sh "mvn clean deploy"
+       sh "mvn deploy"
      }
 }
