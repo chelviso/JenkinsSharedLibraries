@@ -27,5 +27,4 @@ def call(String stageName){
      {
        deploy adapters: [tomcat9(credentialsId: 'tomcat2cred', path: '', url: 'http://44.211.199.201:8080/')], contextPath: null, war: 'target/*war'
      }
-  
-}
+  }
