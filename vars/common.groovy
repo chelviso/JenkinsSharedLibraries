@@ -17,7 +17,7 @@ def call(String stageName){
       deploy adapters: [tomcat9(credentialsId: 'tomcatcrednew', path: '', url: 'http://54.174.70.143:8080/')], contextPath: null, war: 'target/*war'
      }
   
-  else if ("${stageName}" == "Waiting Approval")
+ /* else if ("${stageName}" == "Waiting Approval")
      {
        timeout(time:5, unit:'DAYS') {
     input message: 'Application ready for deployment, Please review and approve'
@@ -27,4 +27,5 @@ def call(String stageName){
      {
        deploy adapters: [tomcat9(credentialsId: 'tomcatcrednew', path: '', url: 'http://54.174.70.143:8080/')], contextPath: null, war: 'target/*war'
      }
+     */
   }
