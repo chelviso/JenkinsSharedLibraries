@@ -14,7 +14,7 @@ def call(String stageName){
      }
   else if ("${stageName}" == "Upload Into Tomcat")
      {
-       deploy adapters: [tomcat9(credentialsId: 'tomcatcred', path: '', url: 'http://54.197.97.134:8080/')], contextPath: null, war: 'target/*war'
+      deploy adapters: [tomcat9(credentialsId: 'tomcatcrednew', path: '', url: 'http://54.174.70.143:8080/')], contextPath: null, war: 'target/*war'
      }
   
   else if ("${stageName}" == "Waiting Approval")
@@ -25,6 +25,6 @@ def call(String stageName){
 }
   else if ("${stageName}" == "Deploy To Production")
      {
-       deploy adapters: [tomcat9(credentialsId: 'tomcat2cred', path: '', url: 'http://44.211.199.201:8080/')], contextPath: null, war: 'target/*war'
+       deploy adapters: [tomcat9(credentialsId: 'tomcatcrednew', path: '', url: 'http://54.174.70.143:8080/')], contextPath: null, war: 'target/*war'
      }
   }
