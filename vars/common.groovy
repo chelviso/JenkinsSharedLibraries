@@ -14,7 +14,7 @@ def call(String stageName){
      }
   else if ("${stageName}" == "Upload Into Tomcat")
      {
-      deploy adapters: [tomcat9(credentialsId: 'tomcatdada', path: '', url: 'http://3.84.94.148:8080/')], contextPath: null, war: 'targe/*war'
+     deploy adapters: [tomcat9(credentialsId: 'tomcatdada1', path: '', url: 'http://44.211.42.209:8080/')], contextPath: null, war: 'target/*.war'
      }
   
  else if ("${stageName}" == "Waiting Approval")
